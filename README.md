@@ -9,4 +9,8 @@ As mentioned, the FMM2D repository code is also object-oriented and written in C
 
 ## FMM2D version 1.0.0
 
-## SetUp
+## Requirements
+* Linux
+* g++
+The FMM2D repository code has only been tested on Ubuntu Linux 14.04 using g++ version 4.8.4
+The make file can be run in a Bash shell terminal.
