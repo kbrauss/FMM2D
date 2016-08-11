@@ -1,7 +1,7 @@
 # FMM2D
 Classic Fast Multipole Method for 2 Dimensions
 
-# # Purpose of Software
+## Purpose of Software
 The FMM2D repository is an academic serial code of the Fast Multipole Method in two dimensions.  The main purpose of the repository is to obtain an understanding of the Fast Multipole Method by way of a documented, object-oriented C++ code.  
 The repository code is based on the 2005 Master thesis code by Yang Wang at UMIACS (University of Maryland Advanced Computer Studies). The thesis was directed by Dr. Ramani Duraiswami and it can be found towards the bottom of Dr. Nail Gumerov's personal web page http://www.umiacs.umd.edu/~gumerov/.  Accompanying the thesis is a link to the open source and object-oriented Java code written by Yang Wang.   
 
