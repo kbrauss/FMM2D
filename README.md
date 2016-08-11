@@ -12,5 +12,31 @@ As mentioned, the FMM2D repository code is also object-oriented and written in C
 ## Requirements
 * Linux
 * g++
+
 The FMM2D repository code has only been tested on Ubuntu Linux 14.04 using g++ version 4.8.4
 The make file can be run in a Bash shell terminal.
+
+## Setup
+The directory structure for the code is shown below. 
+* Makefile
+* src/
+  * Main.cc 
+  * FmmTree.cc
+  * Box.cc
+  * Point.cc
+  * Potential.cc
+  * Util.cc
+  * Example1.cc
+* include/
+  * Main.h 
+  * FmmTree.h
+  * Box.h
+  * Point.h
+  * Potential.h
+  * Util.h
+  * Example1.h
+* docs/
+* deps/
+* build/
+* bin/
+* test/
