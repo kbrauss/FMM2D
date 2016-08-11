@@ -10,14 +10,14 @@ As mentioned, the FMM2D repository code is also object-oriented and written in C
 ## FMM2D version 1.0.0
 
 ## Requirements
-* Linux
-* g++
+* Linux (Ubuntu Linux 14.04)
+* g++   (g++ 4.8.4)
+* Doxygen (doxygen 1.8.6)
 
-The FMM2D repository code has only been tested on Ubuntu Linux 14.04 using g++ version 4.8.4
-The make file can be run in a Bash shell terminal.
+The FMM2D repository code has only been tested on Ubuntu Linux 14.04, g++ version 4.8.4, and doxygen 1.8.6.  However, running on a linux machine with the software listed hopefully does not see too much trouble.  The make file can be run in a Bash shell terminal.
 
 ## Setup
-The directory structure for the repository code is shown below.  Running 'make -f Makefile' in a Bash terminal of the working directory (top directory where the makefile Makefile is located) will compile the code and create the executable.  The command will build the object files, dependencies and executable and place them in the directory build/, deps/, and bin/, respectively.  Goo to the directory bin/ to run the executable 'hello' using ./hello.
+The directory structure for the repository code is shown below.  Running 'make -f Makefile' in a Bash terminal of the working directory (top directory where the makefile Makefile is located) will compile the code and create the executable.  The command will build the object files, dependencies and executable and place them in the directory build/, deps/, and bin/, respectively. After compiling, run the program by going to the directory bin/ where the executable 'hello' is located and type ./hello in the terminal.
 
 * Makefile
 * Doxyfile
@@ -49,3 +49,5 @@ The directory structure for the repository code is shown below.  Running 'make -
 
 ## Details
 The repository can be imported in Eclipse and converted to a C/C++ project.  The code was written using Eclipse 3.8.  However a Bash terminal works fine.  Entering and returning 'make doc -f Makefile' will generate the Doxygen documentation (found in the top portion of Main.cc).  The index.html file for viewing the html version of the documentation can be found in the directory docs/html/.  However, Doxygen generates many files in that directory and therefore a .PHONY commmand called 'htmlIndex' has been added to the makefile Makefile.  To make finding the file easier, run 'make htmlIndex -f Makefile' in a terminal in the working directory.  This results in a symbolic link to index.html in the docs/html/ folder being placed in the working directory - called htmlIndex.  The html documentation for the code can then be opened by opening the htmlIndex link with a web browser.
+
+The details to how certain member functions of the classes in the repository work can be found in the comments above the particular member functions of those classes.  For example, getting the indices of certain boxes (cells) of the FMM tree utilizes bit manipulation.  An explanation of the bit manipulation used in those member functions as well explanations of the member functions are given (by way of examples) in the code commments (above and sometimes in the member function code). 
