@@ -17,8 +17,14 @@ The FMM2D repository code has only been tested on Ubuntu Linux 14.04 using g++ v
 The make file can be run in a Bash shell terminal.
 
 ## Setup
-The directory structure for the code is shown below. 
+The directory structure for the repository code is shown below.  Running 'make -f Makefile' in a Bash terminal of the working directory (top directory where the makefile Makefile is located) will compile the code and create the executable.  The command will build the object files, dependencies and executable and place them in the directory build/, deps/, and bin/, respectively.  Goo to the directory bin/ to run the executable 'hello' using ./hello.
+
 * Makefile
+* Doxyfile
+* customdoxygen.css
+* bilbio.bib
+* contributors.txt
+* README.md
 * src/
   * Main.cc 
   * FmmTree.cc
@@ -40,3 +46,6 @@ The directory structure for the code is shown below.
 * build/
 * bin/
 * test/
+
+## Details
+The repository can be imported in Eclipse and converted to a C/C++ project.  The code was written using Eclipse 3.8.  However a Bash terminal works fine.  Entering and returning 'make doc -f Makefile' will generate the Doxygen documentation (found in the top portion of Main.cc).  The index.html file for viewing the html version of the documentation can be found in the directory docs/html/.  However, Doxygen generates many files in that directory and therefore a .PHONY commmand called 'htmlIndex' has been added to the makefile Makefile.  To make finding the file easier, run 'make htmlIndex -f Makefile' in a terminal in the working directory.  This results in a symbolic link to index.html in the docs/html/ folder being placed in the working directory - called htmlIndex.  The html documentation for the code can then be opened by opening the htmlIndex link with a web browser.
