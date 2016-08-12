@@ -43,10 +43,11 @@ The directory structure for the repository code is shown below.  Running 'make -
   * Util.h
   * Example1.h
 * docs/
+* doxygen_files/images
+  * (image files used by doxygen in hmtl output of Main.cc write-up) 
 * deps/
 * build/
 * bin/
-* test/
 
 ## Details
 
